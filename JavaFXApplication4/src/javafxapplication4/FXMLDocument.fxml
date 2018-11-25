@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication4.FXMLDocumentController">
+   <effect>
+      <Glow />
+   </effect>
+   <children>
+      <Label layoutX="247.0" layoutY="28.0" prefHeight="69.0" prefWidth="207.0" text="kostin.ga" textFill="WHITE">
+         <font>
+            <Font name="Lobster" size="54.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutY="118.0" prefHeight="382.0" prefWidth="700.0" style="-fx-background-color: #FFFAFA;">
+         <children>
+            <TextField fx:id="loginTextField" focusTraversable="false" layoutX="177.0" layoutY="102.0" prefHeight="38.0" prefWidth="364.0" promptText="Login">
+               <font>
+                  <Font name="Lucida Bright Regular" size="17.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="PasswordField" focusTraversable="false" layoutX="177.0" layoutY="153.0" prefHeight="38.0" prefWidth="364.0" promptText="Password" style="-fx-border-radius: 50;">
+               <font>
+                  <Font name="Lao UI" size="17.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="SignInButton" layoutX="258.0" layoutY="229.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="184.0" style="-fx-background-color: #2E3348;" text="Войти" textFill="WHITE">
+               <font>
+                  <Font name="Lobster" size="30.0" />
+               </font>
+            </Button>
+            <Label layoutX="194.0" layoutY="14.0" prefHeight="69.0" prefWidth="324.0" text="Авторизация">
+               <font>
+                  <Font name="Lobster" size="54.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.319047619047619" startY="0.5523809523809524">
+                     <stops>
+                        <Stop color="#2f2f2f" />
+                        <Stop color="#435475" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children></AnchorPane>
+      <Button fx:id="loginButton" layoutX="530.0" layoutY="14.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="156.0" style="-fx-background-color: F39C63;" text="Зарегистрироваться" textFill="WHITE">
+         <font>
+            <Font name="Lobster" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
